@@ -42,7 +42,7 @@ const sumEvens = (arr) => {
 }
 console.log(sumEvens([2,3,5,6]));
 console.log(sumEvens([10, 5, 1, 2, 12]));
-
+// QUESTION: 5
 const range = (num1,num2) => {
 if(num1 === num2) return []
 let arr = []
