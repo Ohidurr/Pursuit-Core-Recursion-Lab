@@ -45,11 +45,14 @@ console.log(sumEvens([10, 5, 1, 2, 12]));
 
 // QUESTION: 5
 const range = (num1, num2, arr = []) => {
-    if(num2 === num1) return arr
-    arr.push(num1 + 1)
-    num1++
-    console.log(arr)
-    return range(num1, num2, arr)
+   if(num2 === num1){
+     arr.push(num2)
+      return arr
+   }
+   arr.push(num1)
+   num1++
+   // console.log(arr)
+   return range(num1, num2, arr)
 
 }
-console.log(range (2,10)) 
+console.log(range (2,10))
